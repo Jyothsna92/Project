@@ -1,0 +1,11 @@
+
+<p>
+  <strong>Pet:</strong>
+  <%= pet.name %>
+</p>
+ 
+ <p>
+  <%= link_to 'Delete Pet', [pet.person, pet],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

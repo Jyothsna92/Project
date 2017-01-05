@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<div>
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @person.address %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @person.phonenumber %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @person.email %>
+</p>
+
+<p>
+  <strong>Activities:</strong>
+  <%= @person.activities %>
+</p>
+</div>
+<h2>Pets</h2>
+<%= render @person.pets %>
+
+<h2>Add Your Pet:</h2>
+<%= render 'pets/form' %>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
